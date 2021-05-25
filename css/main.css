@@ -1,0 +1,122 @@
+/* -------------------------------------------- 
+*   Re-designed by: FARAAZY
+*   Github: https://www.github.com/FaraazKhhan
+*   Date: 4/May/2021
+*  -------------------------------------------- */
+
+
+/* DEFAULT RESETTING */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #f2f2f2;
+}
+
+/* COMMON CONTAINER STYLINGS */
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* MAIN BODY BELOW NAVBAR */
+main {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+/* NAVBAR STYLINGS */
+header {
+    background-color: #ff2a5f;
+    height: 7vh;
+
+    display: flex;
+    align-items: center;
+}
+.logo {
+    font-weight: 1000;
+    cursor: pointer;
+    border-left: 5px solid yellow;
+    padding-left: 5px;
+}
+.nav-link > a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 0.3em 0.5em;
+
+    border-bottom: 2px solid transparent;
+    transition: border-bottom .3s ease-in-out;
+}
+.nav-link > a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+
+/* HERO SECTION */
+section.content {
+    height: 93vh;
+
+    background-image: linear-gradient(132deg, crimson, lightskyblue),
+    url('../assets/images/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: darkslategrey;
+    background-blend-mode: overlay;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-title > h1 {
+    font-size: clamp(4rem, 8vw, 8rem);
+    letter-spacing: -4px;
+    word-spacing: -0.3em;
+    color: rgb(255, 255, 70);
+    text-transform: uppercase;
+}
+
+.hero-title span {
+    color: white;
+}
+
+.hero-title > .pre-heading,
+.hero-title > .post-heading {
+    text-transform: uppercase;
+    letter-spacing: 0.5ch;
+    word-spacing: 0.3em;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0.1));
+    margin-left: 0.3em;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.8em 2em;
+
+    font-size: 0.8rem;
+}
+
+footer > span:not(:first-of-type) {
+    float: right;
+}
+
+footer a {
+    color: white;
+}
